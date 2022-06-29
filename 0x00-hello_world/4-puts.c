@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void) /**Initialising main funtion*/
+/**
+ *  Main funtion prints a string
+ */
+int main(void)
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
 
