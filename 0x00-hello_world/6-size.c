@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int char_size = sizeof(char);
-int int_size = sizeof(int);
-int long_int_size = sizeof(long int);
-int long_long_int_size = sizeof(long long int);
-int float_size = sizeof(float);
+int cz = sizeof(char);
+int iz = sizeof(int);
+int liz = sizeof(long int);
+int lliz = sizeof(long long int);
+int fz = sizeof(float);
 
 /**
  * main - prints size of various types on the computer
@@ -13,11 +13,11 @@ int float_size = sizeof(float);
  */
 int main(void)
 {
-	printf("Size of a char: %i byte(s)\n", char_size);
-	printf("Size of an int: %i byte(s)\n", int_size);
-	printf("Size of a long int: %i byte(s)\n", long_int_size);
-	printf("Size of a long long int: %i byte(s)\n", long_long_int_size);
-	printf("Size of a float: %i byte(s)\n", float_size);
+	printf("Size of a char: %i byte(s)\n", cz);
+	printf("Size of an int: %i byte(s)\n", iz);
+	printf("Size of a long int: %i byte(s)\n", liz);
+	printf("Size of a long long int: %i byte(s)\n", lliz);
+	printf("Size of a float: %i byte(s)\n", fz);
 
 	return (0);
 }
