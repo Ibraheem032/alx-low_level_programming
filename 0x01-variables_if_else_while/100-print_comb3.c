@@ -10,13 +10,13 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 0; i <= 9; i++)
-		for (j = 0; j <= 9; j++)
+	for(i = 0; i <= 9; i++)
+		for(j = 0; j <= 9; j++)
 			if (i == j)
 			       ;
 			else
-				putchar('i');
-				putchar('j');
+				putchar('int(i)');
+				putchar('int(j)');
 				putchar(',');
 				putchar(' ');
 	putchar('\n');
