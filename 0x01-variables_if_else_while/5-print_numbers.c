@@ -8,14 +8,13 @@
 int main(void)
 {
 	int i;
-
-	for (i = 97; i <= 122; i++)
+	
+	for (i = 0; i < 10; i++)
 	{
-		while (i == 101 || i == 113)
-			;
-		putchar(i);
+		printf("i");
 	}
-	putchar('\n');
-
+	printf("\n");
+	
 	return (0);
 }
+

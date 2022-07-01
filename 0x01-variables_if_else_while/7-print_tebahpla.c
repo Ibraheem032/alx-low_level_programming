@@ -8,13 +8,8 @@
 int main(void)
 {
 	int i;
-
-	for (i = 97; i <= 122; i++)
-	{
-		while (i == 101 || i == 113)
-			;
+	for (i = 122; i >= 97; i--)
 		putchar(i);
-	}
 	putchar('\n');
 
 	return (0);
