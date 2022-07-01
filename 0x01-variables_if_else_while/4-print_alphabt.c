@@ -11,10 +11,9 @@ int main(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		if (i == 101 || i == 113)
-			i = '\0';
-		else
-			putchar(i);
+		while (i == 101 || i == 113)
+			i = i++;
+		putchar(i);
 	}
 	putchar('\n');
 
