@@ -20,6 +20,7 @@ int main(void)
 		else
 			putchar((num % 10) + '0');
 	}
+	;
 
 	return (0);
 }
