@@ -25,7 +25,7 @@ int main(void)
 						continue;
 					}
 
-					if (((10 * i) + j) == ((10 * k) + l)
+					if (((10 * i) + j) == ((10 * k) + l))
 					{
 						continue;
 					}
@@ -47,6 +47,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);

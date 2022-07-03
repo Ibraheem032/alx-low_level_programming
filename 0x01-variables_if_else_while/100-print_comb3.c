@@ -15,7 +15,10 @@ int main(void)
 		for(j = 0; j <= 9; j++)
 		{
 			if (i == j)
-			      continue;
+				continue;
+
+			if (i > j)
+				continue;
 
 
 			putchar(i % 10 + '0');
@@ -23,6 +26,7 @@ int main(void)
 
 			if (i == 8 && j == 9)
 				continue;
+
 
 			putchar(',');
 			putchar(' ');
