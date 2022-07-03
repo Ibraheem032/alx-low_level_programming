@@ -20,7 +20,7 @@ int main(void)
 				if (i == j || i == k || j == k)
 					continue;
 
-				if(i > j || i > k || j > k)
+				if (i > j || i > k || j > k)
 					continue;
 
 

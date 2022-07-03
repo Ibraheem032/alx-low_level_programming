@@ -12,7 +12,7 @@ int main(void)
 	int k;
 	int l;
 
-	for (i =0; i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
@@ -31,7 +31,7 @@ int main(void)
 					}
 
 					putchar(i % 10 + '0');
-					putchar(J % 10 + '0');
+					putchar(j % 10 + '0');
 					putchar(' ');
 					putchar(k % 10 + '0');
 					putchar(l % 10 + '0');
