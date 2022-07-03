@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -20,36 +19,22 @@ int main(void)
 			{
 				for (l = 0; l <= 9; l++)
 				{
-					if (((10 * i) + j) > ((10 * k) + l))
-					{
+					if ((10 * i + j) > (10 * k + l) || (10 * i + j) == (10 * k + l))
 						continue;
-					}
-
-					if (((10 * i) + j) == ((10 * k) + l))
-					{
-						continue;
-					}
-
 					putchar(i % 10 + '0');
 					putchar(j % 10 + '0');
 					putchar(' ');
 					putchar(k % 10 + '0');
 					putchar(l % 10 + '0');
-
 					if (i == 9 && j == 8 && k == 9 && l == 9)
-					{
 						continue;
-					}
-
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
-
 }
