@@ -6,12 +6,9 @@
  */
 int main(void)
 {
-	char *s[] = {"_putchar"};
+	char s[] = "_putchar"
 
-	for (i = 0; i in s[]; i++)
-		putchar(i);
-
-	putchar('\n');
+		printf("%c\n", s);
 
 	return (0);
 
