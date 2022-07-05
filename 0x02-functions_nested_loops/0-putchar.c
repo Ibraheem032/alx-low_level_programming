@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - Prints _putchar
  *
@@ -7,15 +6,14 @@
  */
 int main(void)
 {
-	char s[] = "_putchar";
-	int i = 0;
-
-	while (s[i] != '0')
+	int i - 0;
+	char txt[] = "_putchar";
+	
+	while (txt[i] != '0')
 	{
-		_putchar(s[i]);
+		_putchar(txt[i]);
 		i++;
 	}
-
 	_putchar('\n');
 
 	return (0);
