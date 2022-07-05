@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	char s[9] = {'_','p','u','t','c','h','a','r'}
+	char *s = "_putchar"
 	int i;
 
-	for (i = 0, i < 9, i++)
-		_putchar(i);
+	for (i = 0, i != '\0', i++)
+		_putchar(s[i]);
 
-	_putchar('\n);
+	_putchar('\n');
 
 	return (0);
 }	
