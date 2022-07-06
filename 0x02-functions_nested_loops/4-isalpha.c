@@ -12,8 +12,8 @@ int _isalpha(int c)
 	int j = 0;
 
 	if (c >= 65 && c <= 122)
-		return (_putchar(i % 10 + '0'));
+		return (_putchar(49));
 
 	else
-		return (_putchar(j % 10 + '0'));
+		return (_putchar(48));
 }
