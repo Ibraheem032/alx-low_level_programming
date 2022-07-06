@@ -25,7 +25,21 @@ void print_times_table(int n)
 			{
 				continue;
 			}
-			printf(",   ");
+			if (k <= 9)
+			{
+				printf(",   ");
+				continue;
+			}
+			else if (k < 100)
+			{
+				printf(",  ");
+				continue;
+			}
+			else
+			{
+				printf(", ");
+				continue;
+			}
 		}
 
 		printf("\n");
