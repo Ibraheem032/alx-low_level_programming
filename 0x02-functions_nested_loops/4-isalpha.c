@@ -10,11 +10,11 @@ int _isalpha(int c)
 {
 	int i;
 
-	if (c >= 65 && c <= 122)
+	if (c > 64 && c < 123)
 		i = 49;
 
 	else
 		i = 48;
 
-	return(_putchar(i));
+	return (_putchar(i));
 }
