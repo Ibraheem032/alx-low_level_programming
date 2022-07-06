@@ -16,5 +16,7 @@ int _isalpha(int c)
 	else
 		i = 48;
 
-	return (_putchar(i));
+	_putchar(i);
+
+	return (0);
 }
