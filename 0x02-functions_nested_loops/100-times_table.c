@@ -20,26 +20,12 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			k = i * j;
-			printf("%i", k);
+			printf("%-3d", k);
 			if (j == n)
 			{
 				continue;
 			}
-			if (k <= 9)
-			{
-				printf(",   ");
-				continue;
-			}
-			else if (k < 100)
-			{
-				printf(",  ");
-				continue;
-			}
-			else
-			{
-				printf(", ");
-				continue;
-			}
+			printf(",");
 		}
 
 		printf("\n");
