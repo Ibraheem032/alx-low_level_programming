@@ -32,7 +32,7 @@ int print_sign(int n)
 		_putchar('0');
 	}
 
-	_putchar('\n')
+	_putchar('\n');
 
 	return (0);
 		
