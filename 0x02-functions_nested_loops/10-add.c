@@ -6,12 +6,12 @@
  * @i: first argument
  * @j: second argument
  *
- * Return: 0
+ * Return: int
  */
 int add(int i, int j)
 {
 	int k = i + j;
 
-	return (write(0, &k, 0));
+	return (k);
 
 }
