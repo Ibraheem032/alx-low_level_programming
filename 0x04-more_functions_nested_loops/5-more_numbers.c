@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * more_numbers - Prints numbers
  *
@@ -12,9 +13,10 @@ void more_numbers(void)
 	{
 		for (i = 0; i < 15; i++)
 		{
-			_putchar(i % 10 + '0');
+			printf("%i", i);
 		}
-		_putchar('\n');
+		
+		printf("\n");
 	}
 	_putchar('\n');
 }
