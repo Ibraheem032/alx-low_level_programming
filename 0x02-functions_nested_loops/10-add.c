@@ -2,12 +2,12 @@
 #include "main.h"
 /**
  * add - Prints result of sum
- * @int: first argument
- * @int: second argument
+ * @i: first argument
+ * @j: second argument
  *
  * Return: int
  */
-int add(int, int)
+int add(int i, int j)
 {
 	int i;
 	int j;
