@@ -1,4 +1,5 @@
 #include "main.h"
+void triangle(int);
 /**
  * print_diagonal - Prints diagonal line
  * @n: numbers of lines to print
@@ -6,30 +7,34 @@
  */
 void print_diagonal(int n)
 {
-	int i;
-	int j;
-
-	for (j = 0; j < n; j++)
+	if (n == 0 || n < 0)
 	{
-		for (i = 0; i < n; i++)
+		_putchar('\n');
+	}
+	else
+	{
+		void triangle(n)
 		{
-			if (n == 0 || n < 0)
+			int j;
+
+			if (n == 1)
 			{
-				_putchar('\n');
+				_putchar('\\');
 			}
 			else
 			{
-				if (i == n - 1)
+				triangle(n - 1);
+				for (j = 0; j < n; j++)
 				{
-					_putchar('\\');
-				}
 
-				else
-				{
+					if (j == n - 1)
+					{
+						_putchar('\\');
+					}
 					_putchar(' ');
 				}
+				_putchar('\n');
 			}
 		}
-		_putchar('\n');
 	}
 }
