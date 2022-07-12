@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - prints string in reverse
+ * rev_string - prints string in reverse
  * @s: string input
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int len = strlen(s);
@@ -18,4 +18,3 @@ void print_rev(char *s)
 		printf("%c", s[i]);
 	}
 	printf("\n");
-}
