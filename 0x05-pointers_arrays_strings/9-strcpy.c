@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * _strcpy - copies string from one variable to the other
  * @dest: pointer to copy to
