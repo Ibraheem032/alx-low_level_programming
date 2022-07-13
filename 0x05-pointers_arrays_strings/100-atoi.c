@@ -9,8 +9,5 @@
  */
 int _atoi(char *s)
 {
-	if (sizeof(s) == 0)
-		return (0);
-	else
-		return (atoi(s));
+	return (atoi(s));
 }
