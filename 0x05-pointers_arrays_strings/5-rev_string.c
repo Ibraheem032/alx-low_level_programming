@@ -9,13 +9,11 @@ void rev_string(char *s)
 {
 	int i;
 	int len = strlen(s);
+	int j;
 
+	for (j = 0; j <= len; j++)
 	for (i = len; i >= 0; i--)
-	{
-		if (s[i] == '\0')
-			continue;
-		else
-			printf("%c", s[i]);
-	}
+		s[j] = s[i]; 
+
 	printf("\n");
 }

@@ -10,7 +10,7 @@ void puts2(char *str)
 	int len = strlen(str);
 	int i;
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (i % 2 == 0)
 			printf("%c", str[i]);
@@ -18,4 +18,5 @@ void puts2(char *str)
 		else
 			continue;
 	}
+	printf("\n");
 }
