@@ -11,6 +11,9 @@ void rev_string(char *s)
 	int len = strlen(s);
 
 	for (i = 0; i < len; i++)
+	{
 		s[i] = s[(len - i)];
+		putchar(s[i];
+	}
 	printf("\n");
 }
