@@ -6,9 +6,8 @@
  * @char *: string to input
  * Return: returns the input string
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	char *s;
 	int i;
 
 	for (i = 0; i < strlen(s); i++)
