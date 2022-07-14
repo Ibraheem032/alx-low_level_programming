@@ -6,10 +6,9 @@
  * @char *: input string
  * Return: return the input string
  */
-char *cap_string(char *)
+char *cap_string(char *s)
 {
 	int i;
-	char *s;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
