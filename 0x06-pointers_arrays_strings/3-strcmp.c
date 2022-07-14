@@ -5,9 +5,11 @@
  * _strcmp - compares two string
  * @s1: first input
  * @s2: second input
- * 
+ * Return: integer
  */
-char *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	strcmp(s1, s2);
+	int s = strcmp(s1, s2);
+
+	return (s);
 }
