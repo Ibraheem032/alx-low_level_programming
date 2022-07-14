@@ -23,7 +23,6 @@ char *cap_string(char *s)
 				s[i + 1] = s[i + 1] - 32;
 		}
 		printf("%c", s[i]);
-
 	}
 	return (s);
 }
