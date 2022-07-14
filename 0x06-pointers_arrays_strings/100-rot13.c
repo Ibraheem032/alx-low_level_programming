@@ -13,9 +13,9 @@ char *rot13(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (isalpha(s[i]) && s[i] > 'n')
+		if (isalpha(s[i]) && s[i] > 'm')
 			s[i] = s[i] - 13;
-		else if (isalpha(s[i]) && s[i] <= 'n')
+		else if (isalpha(s[i]) && s[i] <= 'm')
 			s[i] = s[i] + 13;
 		printf("%c", s[i]);
 	}
