@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * cap_string - capitalizes all words of a string
- * @char *: input string
+ * @s: input string
  * Return: return the input string
  */
 char *cap_string(char *s)

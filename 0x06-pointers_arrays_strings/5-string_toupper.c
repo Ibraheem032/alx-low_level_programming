@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * string_toupper - Changes all lowercase of a string to uppercase
- * @char *: string to input
+ * @s: string to input
  * Return: returns the input string
  */
 char *string_toupper(char *s)
