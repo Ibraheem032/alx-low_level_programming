@@ -16,16 +16,14 @@ char *cap_string(char *s)
 		{
 			if (s[i] >= 'a' && s[i] <= 'z')
 				s[i] = s[i] - 32;
-			continue;
 		}
-		if (s[i] == ' ' || s[i] == '.' || s[i] = '\t' || s[i] = '\n')
+		if (s[i] == ' ' || s[i] == '.' || s[i] == '\t' || s[i] == '\n')
 		{
 			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				s[i + 1] = s[i + 1] - 32;
-			continue;
 		}
+		printf("%c", s[i]);
 
-			
 	}
 	return (s);
 }
