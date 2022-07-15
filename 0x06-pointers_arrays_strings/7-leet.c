@@ -20,7 +20,6 @@ char *leet(char *s)
 			if (s[i] == t1[j] || s[i] == t3[j])
 			{
 				s[i] = t2[j];
-				break;
 			}
 		}
 		printf("%c", s[i]);
