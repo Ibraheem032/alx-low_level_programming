@@ -20,5 +20,5 @@ char *rot13(char *s)
 		printf("%c", s[i]);
 	}
 
-	return(s);
+	return (s);
 }
