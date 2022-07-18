@@ -4,7 +4,7 @@
  * @s: Variable containing the memory address
  * @b: Variable containing the value to be filled in *s
  * @n: size of bytes to be filled in
- * Return: *s
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
