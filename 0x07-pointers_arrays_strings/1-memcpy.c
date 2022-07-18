@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _memcpy - copies memory area of n bytes from one pointer to ther other
  * @src: Address to copy from
