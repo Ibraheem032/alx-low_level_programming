@@ -15,7 +15,7 @@ void print_diagsums(int *a, int size)
 	int i;
 	int **p;
 	p = &a;
-	int z = sqrt((double)size);
+	double z = sqrt((double)size);
 
 	for (i = 0; i < z; i++)
 	{	
