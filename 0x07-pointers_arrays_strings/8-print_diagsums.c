@@ -15,12 +15,11 @@ void print_diagsums(int *a, int size)
 	int i;
 	int **p;
 	p = &a;
-	double z = sqrt((double)size);
 
-	for (i = 0; i < z; i++)
+	for (i = 0; i < size; i++)
 	{	
 		sum1 += p[i][i];
-		sum2 += p[i][z - i - 1];
+		sum2 += p[i][size - i - 1];
 	}
 	printf("%d, %d", sum1, sum2);
 }
