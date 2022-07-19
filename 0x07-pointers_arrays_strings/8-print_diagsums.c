@@ -12,22 +12,27 @@ void print_diagsums(int *a, int size)
 	int sum2 = 0;
 	int i;
 	int j;
+	int **p;
+	p = &a;
+	int k;
+	int l;
 
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < size; j++)
 		{
 			if(i == j)
-				sum1 += a[i][j];
+				sum1 += p[i][j];
 
 		}
 	}
-	for (i = 0; i < size; i++)
+	for (k = 0; k < size; k++)
 	{
-		for (j = size - 1; j >= 0; j)
+		for (l = 0; l < size; l++)
 		{
-			if(j - i == size - 1)
-				sum2 += a[i][j];
+			unsigned int z = k - l;
+			if(z == size - 1)
+				sum2 += p[i][j];
 		}
 	}
 	printf("%i, %i\n", sum1, sum2);
