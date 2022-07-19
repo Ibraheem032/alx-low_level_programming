@@ -10,8 +10,8 @@
  */
 void print_diagsums(int *a, int size)
 {
-	double sum1 = 0;
-	double sum2 = 0;
+	int sum1 = 0;
+	int sum2 = 0;
 	int i;
 	int **p;
 	p = &a;
