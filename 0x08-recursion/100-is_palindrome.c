@@ -8,11 +8,9 @@
 int pal(char *d, int a, int b);
 int is_palindrome(char *s)
 {
-	int b;
-
 	if (strlen(s) == 0)
 		return (1);
-	pal(s, 0, b);
+	pal(s, 0);
 }
 /**
  * is_palindrome - checks if a string is a palindrome
@@ -21,8 +19,10 @@ int is_palindrome(char *s)
  * @b: int input
  * Return: 1, if true and 0 otherwise
  */
-int pal(char *d, int a, int b)
+int pal(char *d, int a)
 {
+	int b;
+
 	if (*d > '\0')
 	{
 		b = strlen(d) - a - 1;
