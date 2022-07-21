@@ -5,17 +5,31 @@
  * @s: Pointer to string to check
  * Return: 1, if true and 0 otherwise
  */
+int pal(char *d, int a, int b);
 int is_palindrome(char *s)
 {
-	int i;
+	int y;
 
 	if (strlen(s) == 0)
 		return (1);
-	for (i = 0; s[i] != '\0'; i++)
+	pal(s, 0, y);
+}
+/**
+ * is_palindrome - checks if a string is a palindrome
+ * @s: Pointer to string to check
+ * @a: int input
+ * @b: int input
+ * Return: 1, if true and 0 otherwise
+ */
+int pal(char *d, int a, int b)
+{
+	if (*d > '\0')
 	{
-		if (s[i] == s[strlen(s) - 1 - i])
-			return (1);
+		b = strlen(d) - a - 1;
+		if (d[a] == d[b])
+			pal(d, a + 1, b);
 		else
 			return (0);
 	}
+	return (1);
 }
