@@ -10,7 +10,8 @@ int is_palindrome(char *s)
 {
 	if (strlen(s) == 0)
 		return (1);
-	pal(s, 0);
+
+	return (pal(s, 0));
 }
 /**
  * is_palindrome - checks if a string is a palindrome
@@ -26,10 +27,13 @@ int pal(char *d, int a)
 	if (*d > '\0')
 	{
 		b = strlen(d) - a - 1;
+
 		if (d[a] == d[b])
 			pal(d, a + 1);
+
 		else
 			return (0);
 	}
+
 	return (1);
 }
