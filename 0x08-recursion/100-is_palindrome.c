@@ -5,7 +5,7 @@
  * @s: Pointer to string to check
  * Return: 1, if true and 0 otherwise
  */
-int pal(char *d, int a, int b);
+int pal(char *d, int a);
 int is_palindrome(char *s)
 {
 	if (strlen(s) == 0)
@@ -27,7 +27,7 @@ int pal(char *d, int a)
 	{
 		b = strlen(d) - a - 1;
 		if (d[a] == d[b])
-			pal(d, a + 1, b);
+			pal(d, a + 1);
 		else
 			return (0);
 	}
