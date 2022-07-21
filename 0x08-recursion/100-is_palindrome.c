@@ -10,7 +10,7 @@ int is_palindrome(char *s)
 {
 	if (strlen(s) == 0)
 		return (1);
-	pal(s, 0);
+	pal(s, 0, y);
 }
 /**
  * is_palindrome - checks if a string is a palindrome
