@@ -22,5 +22,5 @@ int sqr(int n, int a)
 		return (a);
 	if (a * a < n && (a + 1) * (a + 1) > n)
 		return (-1);
-	sqr(n, a + 1);
+	return (sqr(n, a + 1));
 }
