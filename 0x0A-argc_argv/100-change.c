@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (n < 0)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
 	f = (n / 25);
 	h = ((n % 25) / 10);
