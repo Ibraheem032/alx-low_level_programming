@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - Prints the name of the program
  * @argc: size of array of *argv
