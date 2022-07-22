@@ -2,6 +2,7 @@
 /**
  * is_prime_number - checks for prime numbers
  * @n: number to check for
+ * @a: input parameter for prime function
  * Return: 1 if true, 0 otherwise
  */
 int prime(int n, int a);
@@ -15,7 +16,7 @@ int is_prime_number(int n)
  * @n: int input
  * @a: int input
  * Return: 1 if true and 0 otherwise
- */ 
+ */
 int prime(int n, int a)
 {
 	if (n < 2)

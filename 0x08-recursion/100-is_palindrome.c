@@ -3,6 +3,8 @@
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: Pointer to string to check
+ * @d: Pointer to string to check
+ * @a: int input
  * Return: 1, if true and 0 otherwise
  */
 int pal(char *d, int a);
@@ -15,9 +17,8 @@ int is_palindrome(char *s)
 }
 /**
  * is_palindrome - checks if a string is a palindrome
- * @s: Pointer to string to check
+ * @d: Pointer to string to check
  * @a: int input
- * @b: int input
  * Return: 1, if true and 0 otherwise
  */
 int pal(char *d, int a)
