@@ -16,18 +16,18 @@ char *str_concat(char *s1, char *s2)
 	int size2 = strlen(s2);
 	int size = size1 + size2 + 1;
 
-	if (size == 0)
-		return (NULL);
 	conc = malloc(size);
 	if (conc == NULL)
 		return (NULL);
 	if (s1 == NULL)
-		s1 = "";
+		return (s2);
 	if (s2 == NULL)
-		s2 = "";
+		return (s1);
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-		conc[i] = s1[i]; 
+		conc[i] = s1[i];
 	}
 	for (j = 0; j < size2; j++)
 	{
