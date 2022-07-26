@@ -8,11 +8,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
-		return (NULL);
 	char *s;
 
+	if (size == 0)
+		return (NULL);
 	s = malloc(size);
 	s[0] = c;
-	free(s)
+	free(s);
+	return (s);
 }
