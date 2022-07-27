@@ -21,18 +21,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (s1 == NULL)
 	{
-		if (s2 == NULL)
-			return ("");
-		else
-			return (s2);
+		size1 = "";
 	}
 	if (s2 == NULL)
-	{
-		if (s1 == NULL)
-			return ("");
-		else
-			return (s1);
-	}
+		size2 = "";
+
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		conc[i] = s1[i];
