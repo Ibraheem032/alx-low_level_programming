@@ -1,14 +1,13 @@
 #ifndef FILE_DOG
 #define FILE_DOG
-
 /**
  * struct dog - Structure dog
  * @name: Pointer to dog's name
  * @age: Dog's age
  * @owner: POinter to dog's owner
  *
- * Description: struct dog is a structure that contains the details of a dog such as name, age and owner of the dog
- */ 
+ * Description: struct dog is a structure that contains dog info
+ */
 struct dog
 {
 	char *name;
