@@ -6,6 +6,8 @@
  * @name: Pointer to dog's name
  * @age: Dog's age
  * @owner: POinter to dog's owner
+ *
+ * Description: struct dog is a structure that contains the details of a dog such as name, age and owner of the dog
  */ 
 struct dog
 {
@@ -13,7 +15,9 @@ struct dog
 	float age;
 	char *owner;
 };
-
+/**
+ * dog_t - Typedef for struct dog
+ */
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
