@@ -2,11 +2,10 @@
 #include <stdlib.h>
 /**
  * main - Prints the name of the file the program was compile from
- * @argc: Argument count
- * @argv: Pointer to argument strings
+ *
  * Return: 0
  */
-int main(int argc, char **argv)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 
