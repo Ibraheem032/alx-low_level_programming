@@ -6,7 +6,7 @@
  */
 void f(char *s)
 {
-	printf("%s", s);
+	printf("%s\n", s);
 }
 /**
  * print_name - Prints name
