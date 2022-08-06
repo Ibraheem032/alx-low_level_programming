@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "variadic_functions.h"
-#include <stdarg.h>
 /**
  * print_strings - prints strings followed by a new line
  * @n: Number of undefined args
