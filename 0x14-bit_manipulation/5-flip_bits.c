@@ -10,12 +10,12 @@ int countSetBits(int n)
 	int count;
 
 	count = 0;
-        while (n > 0)
+	while (n > 0)
 	{
 		count++;
-	        n &= (n - 1);
+		n &= (n - 1);
 	}
-	return count;
+	return (count);
 }
 /**
  * flip_bits - returns the number of bits to flip
