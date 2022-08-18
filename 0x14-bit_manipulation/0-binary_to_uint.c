@@ -6,7 +6,8 @@
  */
 int _strlen(const char *s)
 {
-	int i, l;
+	int i;
+	int l;
 
 	l = 0;
 	for (i = 0; s[i] != '\0'; i++)
@@ -24,8 +25,9 @@ int _strlen(const char *s)
 unsigned int power(int x, int y)
 {
 	int i;
-	unsigned int result = 1;
+	unsigned int result;
 
+	result = 1;
 	if (y == 0)
 	{
 		return (1);
@@ -43,8 +45,10 @@ unsigned int power(int x, int y)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int len, i;
-	unsigned int n, num;
+	int len;
+	int i;
+	unsigned int n;
+	unsigned int num;
 
 	num = 0;
 	len = _strlen(b);
