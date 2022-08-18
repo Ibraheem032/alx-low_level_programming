@@ -6,11 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, num;
-
-	for (i = sizeof(int) * 8; i >= 0; i--)
-	{
-		num = ((n & (1 << i)) >> i);
-		printf("%i", num);
-	}
+	if (n > 1)
+		print_binary(n >> 1);
+	printf("%ld", n & 1);
 }
