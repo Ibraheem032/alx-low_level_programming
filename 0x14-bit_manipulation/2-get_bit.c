@@ -24,10 +24,10 @@ int *base_converter(unsigned long int n, int base)
 	return (tmp);
 }
 /**
- * Finds the bit at a particular index of a number
+ * get_bit - Finds the bit at a particular index of a number
  * @n: Number to be evaluated
  * @index: Index to be looked for
- * return: the value of the bit at index "index"
+ * Return: the value of the bit at index "index"
  */
 int get_bit(unsigned long int n, unsigned int index)
 {

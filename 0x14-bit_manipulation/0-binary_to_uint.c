@@ -3,7 +3,7 @@
  * _strlen - computes the length of a string
  * @s: Point to the string to  be computed
  * Return: length of the string
- */ 
+ */
 int _strlen(const char *s)
 {
 	int i, l;
@@ -37,7 +37,7 @@ unsigned int power(int x, int y)
 	return (result);
 }
 /**
- * binary_to _uint - Converts binary to an unsigned int
+ * binary_to_uint - Converts binary to an unsigned int
  * @b: Pointer to a string of 0 and 1 chars
  * Return: Converted number
  */
