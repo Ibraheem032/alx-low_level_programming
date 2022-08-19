@@ -55,6 +55,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	int *tmp;
 	unsigned int len;
 
+	if (!index)
+		return (-1);
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
