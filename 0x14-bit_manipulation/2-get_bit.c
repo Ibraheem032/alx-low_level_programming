@@ -55,7 +55,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
-	len = _strlen((tmp);
+	len = _strlen(tmp);
 	if (index > 64 || index > len)
 		return (-1);
 	return (tmp[index]);
