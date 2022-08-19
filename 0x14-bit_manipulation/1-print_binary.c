@@ -23,12 +23,12 @@ int countbits(unsigned long int n)
 void print_binary(unsigned long int n)
 {
 	int l, i;
-	unsigned long int num;
+	char num;
 
 	l = countbits(n);
 	for (i = l; i >= 0; i--)
 	{
-		num = (n & (1 << i)) >> i;
-		printf("%ld", num);
+		num = (char) ((n & (1 << i)) >> i);
+		_putchar(num);
 	}
 }
