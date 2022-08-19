@@ -18,7 +18,7 @@ unsigned long int power(unsigned int x, unsigned int y)
 /**
  * clear_bit - Sets the value of a bit to 0 at a given index
  * @n: Pointer to int
- * @index: bit's index to be set to 1
+ * @index: bit's index to be set to 0
  * Return: 1 if it worked, -1 otherwise
  */
 int clear_bit(unsigned long int *n, unsigned int index)
@@ -30,7 +30,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		*n = 0;
 	else
 		*n -= new_number;
-	if (new_number)
+	if (n)
 		return (1);
 	else
 		return (-1);

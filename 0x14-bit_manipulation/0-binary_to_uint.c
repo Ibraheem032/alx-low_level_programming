@@ -50,6 +50,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int n;
 	unsigned int num;
 
+	if (b == NULL)
+		return (0);
 	num = 0;
 	len = _strlen(b);
 	if (b == NULL)

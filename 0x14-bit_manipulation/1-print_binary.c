@@ -9,6 +9,8 @@ int countbits(unsigned long int n)
 	int l;
 
 	l = 0;
+	if (n == 0)
+		return (0);
 	while (n > 0)
 	{
 		n = (unsigned long int) (n * 0.5);
