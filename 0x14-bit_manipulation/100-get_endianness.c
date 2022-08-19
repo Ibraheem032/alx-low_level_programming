@@ -4,7 +4,7 @@
  * Return: 1, if architecture is little, 0 in case of big endian
  */
 
-int get_endianness()
+int get_endianness(void)
 {
 	unsigned int x;
 	char *c;
