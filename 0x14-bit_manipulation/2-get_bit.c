@@ -29,10 +29,10 @@ free(tmp);
  * @s: Point to the string to  be computed
  * Return: length of the string
  */
-unsigned int _strlen(char *s)
+unsigned int _strlen(int *s)
 {
 	int i;
-	int l;
+	unsigned int l;
 
 	l = 0;
 	for (i = 0; s[i] != '\0'; i++)
@@ -55,7 +55,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
-	len = _strlen((char *)tmp);
+	len = _strlen((tmp);
 	if (index > 64 || index > len)
 		return (-1);
 	return (tmp[index]);
