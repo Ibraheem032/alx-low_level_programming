@@ -6,15 +6,15 @@
  */
 int countbits(unsigned long int n)
 {
-        int l;
+	int l;
 
-        l = 0;
-        While (n > 0)
-        {
-                n = (unsigned long int) (n * 0.5);
-                l++;
-        }
-        return (l);
+	l = 0;
+	while (n > 0)
+	{
+		n = (unsigned long int) (n * 0.5);
+		l++;
+	}
+	return (l - 1);
 }
 /**
  * print_binary - Prints the binary representation of a number
@@ -22,12 +22,13 @@ int countbits(unsigned long int n)
  */
 void print_binary(unsigned long int n)
 {
-        int l, i;
+	int l, i;
+	unsigned long int num;
 
-        l = countbits(n);
-        for (i = l; i > 0; i--)
-        {
-                num = (n & (1 << i)) >> i;
-                printf("%ld", num);
-        }
+	l = countbits(n);
+	for (i = l; i >= 0; i--)
+	{
+		num = (n & (1 << i)) >> i;
+		printf("%ld", num);
+	}
 }
