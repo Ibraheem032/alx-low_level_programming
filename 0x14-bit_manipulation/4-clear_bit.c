@@ -26,12 +26,14 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	unsigned long int new_number;
 
 	new_number = power(2, index);
-	if (*n < new_number)
+	if (*n < new_number || n == NULL)
+	{
 		*n = 0;
-	else
-		*n -= new_number;
-	if (n)
-		return (1);
-	else
 		return (-1);
+	}
+	else
+	{
+		*n -= new_number;
+		return (1);
+	}
 }

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 
 
@@ -24,7 +25,7 @@ int main(void)
 
 		    printf("%u\n", n);
 
-		        n = flip_bits(402, 98);
+		        n = flip_bits(ULONG_MAX, 0);
 
 			    printf("%u\n", n);
 

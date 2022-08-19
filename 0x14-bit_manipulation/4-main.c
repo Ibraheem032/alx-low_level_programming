@@ -17,14 +17,14 @@ int main(void)
 {
 
 	    unsigned long int n;
+		int t;
 
 
+	        n = 2048;
 
-	        n = 1024;
+		    t = clear_bit(&n, 20);
 
-		    clear_bit(&n, 10);
-
-		        printf("%lu\n", n);
+		        printf("%i,%lu\n", t, n);
 
 			    n = 0;
 
