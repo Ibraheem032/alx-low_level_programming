@@ -21,6 +21,7 @@ int *base_converter(unsigned long int n, int base)
 	for (j = 0; j < i; j++)
 		tmp[j] = buffer[j];
 	tmp[j] = '\0';
+free(tmp);
 	return (tmp);
 }
 /**
@@ -28,7 +29,7 @@ int *base_converter(unsigned long int n, int base)
  * @s: Point to the string to  be computed
  * Return: length of the string
  */
-unsigned int _strlen(int *s)
+unsigned int _strlen(char *s)
 {
 	int i;
 	int l;
@@ -54,8 +55,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
-	len = _strlen(tmp);
-	if (index > 64 || index > len + 1)
+	len = _strlen((char *)tmp);
+	if (index > 64 || index > len)
 		return (-1);
 	return (tmp[index]);
 }
