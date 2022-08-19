@@ -30,10 +30,9 @@ int *base_converter(unsigned long int n, int base)
  * @n: number to be worked on
  * Return: an int
  */
-int countbits(int *n)
+unsigned int countbits(int *n)
 {
-	int l;
-	int i;
+	unsigned int l;
 
 	l = 0;
 	if (n == NULL)
@@ -54,7 +53,7 @@ int countbits(int *n)
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int *tmp;
-	int len;
+	unsigned int len;
 
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
