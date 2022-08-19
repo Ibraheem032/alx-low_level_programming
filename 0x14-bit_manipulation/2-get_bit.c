@@ -24,6 +24,23 @@ int *base_converter(unsigned long int n, int base)
 	return (tmp);
 }
 /**
+ * _strlen - computes the length of a string
+ * @s: Point to the string to  be computed
+ * Return: length of the string
+ */
+int _strlen(const char *s)
+{
+	int i;
+	int l;
+
+	l = 0;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		l += 1;
+	}
+	return (l);
+}
+/**
  * get_bit - Finds the bit at a particular index of a number
  * @n: Number to be evaluated
  * @index: Index to be looked for
@@ -34,7 +51,10 @@ int get_bit(unsigned long int n, unsigned int index)
 	int *tmp;
 
 	tmp = base_converter(n, 2);
-	if (tmp == NULL || !tmp[index])
+	if (tmp == NULL)
+		return (-1);
+	len = _strlen(tmp);
+	if (index > 64 || index > len)
 		return (-1);
 	return (tmp[index]);
 }
