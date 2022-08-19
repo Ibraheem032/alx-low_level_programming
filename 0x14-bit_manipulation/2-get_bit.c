@@ -33,10 +33,8 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int *tmp;
 
-	if (!index)
-		return (-1);
 	tmp = base_converter(n, 2);
-	if (tmp == NULL)
+	if (tmp == NULL || !tmp[index])
 		return (-1);
 	return (tmp[index]);
 }
