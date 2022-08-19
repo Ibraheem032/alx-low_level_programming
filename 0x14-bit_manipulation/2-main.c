@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 
 
@@ -20,7 +21,7 @@ int main(void)
 
 
 
-	        n = get_bit(2048, 200);
+	        n = get_bit(ULONG_MAX, 5);
 
 		    printf("%d\n", n);
 

@@ -21,6 +21,8 @@ int *base_converter(unsigned long int n, int base)
 		return (NULL);
 	for (j = 0; j < i; j++)
 		tmp[j] = buffer[j];
+	tmp[j] = '\0';
+	free(tmp);
 	return (tmp);
 }
 /**
@@ -31,6 +33,7 @@ int *base_converter(unsigned long int n, int base)
 int countbits(int *n)
 {
 	int l;
+	int i;
 
 	l = 0;
 	if (n == NULL)
@@ -57,6 +60,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (tmp == NULL)
 		return (-1);
 	len = countbits(tmp);
+	if (index > len)
+		return (-1);
 	if (index > 64)
 		return (-1);
 	return (tmp[index]);
