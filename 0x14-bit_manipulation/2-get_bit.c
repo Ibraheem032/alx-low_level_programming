@@ -28,7 +28,7 @@ int *base_converter(unsigned long int n, int base)
  * @s: Point to the string to  be computed
  * Return: length of the string
  */
-int _strlen(const char *s)
+unsigned int _strlen(int *s)
 {
 	int i;
 	int l;
@@ -49,12 +49,13 @@ int _strlen(const char *s)
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int *tmp;
+	unsigned int len;
 
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
 	len = _strlen(tmp);
-	if (index > 64 || index > len)
+	if (index > 64 || index > len + 1)
 		return (-1);
 	return (tmp[index]);
 }
