@@ -7,7 +7,8 @@
  */
 int *base_converter(unsigned long int n, int base)
 {
-	int i, j, buffer[65];
+	int i, j;
+	int buffer[65];
 	int *tmp;
 
 	for (i = 0; n > 0; i++)
@@ -15,30 +16,31 @@ int *base_converter(unsigned long int n, int base)
 		buffer[i] = n % base;
 		n  /= base;
 	}
-	tmp = malloc(sizeof(int) * i);
+	tmp = malloc(i * sizeof(int));
 	if (tmp == NULL)
 		return (NULL);
 	for (j = 0; j < i; j++)
 		tmp[j] = buffer[j];
-	tmp[j] = '\0';
 	return (tmp);
 }
 /**
- * _strlen - computes the length of a string
- * @s: Point to the string to  be computed
- * Return: length of the string
+ * countbits - counts number of bits in an int
+ * @n: number to be worked on
+ * Return: an int
  */
-unsigned int _strlen(int *s)
+int countbits(int *n)
 {
-	int i;
 	int l;
 
 	l = 0;
-	for (i = 0; s[i] != '\0'; i++)
+	if (n == NULL)
+		return (0);
+	while (*n > 0)
 	{
-		l += 1;
+		*n = *n / 2;
+		l++;
 	}
-	return (l);
+	return (l - 1);
 }
 /**
  * get_bit - Finds the bit at a particular index of a number
@@ -49,13 +51,13 @@ unsigned int _strlen(int *s)
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int *tmp;
-	unsigned int len;
+	int len;
 
 	tmp = base_converter(n, 2);
 	if (tmp == NULL)
 		return (-1);
-	len = _strlen(tmp);
-	if (index > 64 || index > len + 1)
+	len = countbits(tmp);
+	if (index > 64)
 		return (-1);
 	return (tmp[index]);
 }
