@@ -32,33 +32,33 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: cp %s %s\n", argv[1], argv[2]);
+		dprintf(2, "Usage: cp %s %s\n", argv[1], argv[2]);
 		exit(97);
 	}
 	fd = open(argv[1], O_RDONLY);
 	count = read(fd, buf, 1024);
 	if (fd == -1 || count == -1)
 	{
-		fprintf(stderr, "Error: Can't read from %s\n", argv[1]);
+		dprintf(2, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
 	close_ret = close(fd);
 	if (close_ret == -1)
 	{
-		fprintf(stderr, "Error: Can't close fd %i\n", fd);
+		dprintf(2, "Error: Can't close fd %i\n", fd);
 		exit(100);
 	}
 	fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 00664);
 	count = write(fd, buf, _strlen(buf));
 	if (fd == -1 || count == -1)
 	{
-		fprintf(stderr, "Error: Can't write from %s\n", argv[2]);
+		dprintf(2, "Error: Can't write from %s\n", argv[2]);
 		exit(99);
 	}
 	close_ret = close(fd);
 	if (close_ret == -1)
 	{
-		fprintf(stderr, "Error: Can't close fd %i\n", fd);
+		dprintf(2, "Error: Can't close fd %i\n", fd);
 		exit(100);
 	}
 	return (0);
